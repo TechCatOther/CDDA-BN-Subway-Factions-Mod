@@ -3,8 +3,8 @@
     "type": "MOD_INFO",
     "id": "undermetro_mod",
     "name": "UnderMetro Mod",
-    "authors": [ "Jolmar7" ],
-    "maintainers": [ "Jolmar7" ],
+    "authors": [ "Jolmar7", "TechCat" ],
+    "maintainers": [ "TechCat" ],
     "description": "Adds a variety of items, enemies and locations inspired by the games Metro 2033 and Underrail.",
     "category": "content",
     "dependencies": [ "dda" ]

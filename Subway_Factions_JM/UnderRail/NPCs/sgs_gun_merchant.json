@@ -52,9 +52,7 @@
     "type": "item_group",
     "id": "NC_SGSGUN_weapon",
     "subtype": "distribution",
-    "entries": [
-      { "item": "null" }
-    ]
+    "entries": [ { "item": "null" } ]
   },
   {
     "type": "item_group",
@@ -74,17 +72,15 @@
     "type": "item_group",
     "id": "NC_SGSGUN_carry",
     "subtype": "collection",
-    "entries": [
-      { "item": "null" }
-    ]
+    "entries": [ { "item": "null" } ]
   },
   {
     "type": "item_group",
     "id": "NC_SGSGUN_SHOP",
     "subtype": "collection",
     "entries": [
-      { "group": "infantry_medical_gear", "prob": 80, "repeat": [ 4, 10 ] },
-      { "group": "hospital_medical_items", "prob": 80, "repeat": [ 6, 15 ] }
+      { "group": "infantry_medical_gear", "prob": 80, "count": [ 4, 10 ] },
+      { "group": "hospital_medical_items", "prob": 80, "count": [ 6, 15 ] }
     ]
   },
   {
@@ -93,25 +89,13 @@
     "dynamic_line": {
       "u_female": true,
       "yes": "What are you buying, what are you selling?",
-      "no": "What are you buying, what are you selling?"},
+      "no": "What are you buying, what are you selling?"
+    },
     "responses": [
-      {
-        "text": "What is it like being a gun merchant around here?",
-        "topic": "TALK_SGSGUN_infotown"
-      },
-      {
-        "text": "Would you be willing to let me buy anything?",
-        "effect": "start_trade",
-        "topic": "TALK_SGSGUN_Town"
-      },
-      {
-        "text": "Do you have a task for me?",
-        "topic": "TALK_MISSION_LIST"
-      },
-      {
-        "text": "See you later.",
-        "topic": "TALK_DONE"
-      }
+      { "text": "What is it like being a gun merchant around here?", "topic": "TALK_SGSGUN_infotown" },
+      { "text": "Would you be willing to let me buy anything?", "effect": "start_trade", "topic": "TALK_SGSGUN_Town" },
+      { "text": "Do you have a task for me?", "topic": "TALK_MISSION_LIST" },
+      { "text": "See you later.", "topic": "TALK_DONE" }
     ]
   },
   {
@@ -120,13 +104,9 @@
     "dynamic_line": {
       "u_female": true,
       "yes": "You would be surprised at the amount of business we get, even all the way down here in a subway. I guess it pays to be a safe-haven in an unsafe world. A lot of people are pretty confused by our guns though, it's like they've never seen them before.",
-      "no": "You would be surprised at the amount of business we get, even all the way down here in a subway. I guess it pays to be a safe-haven in an unsafe world. A lot of people are pretty confused by our guns though, it's like they've never seen them before."},
-    "responses": [
-      {
-        "text": "Got it.",
-        "topic": "TALK_SGSGUN_Town"
-      }
-    ]
+      "no": "You would be surprised at the amount of business we get, even all the way down here in a subway. I guess it pays to be a safe-haven in an unsafe world. A lot of people are pretty confused by our guns though, it's like they've never seen them before."
+    },
+    "responses": [ { "text": "Got it.", "topic": "TALK_SGSGUN_Town" } ]
   },
   {
     "id": "MISSION_GET_SGS_GUN_ITEM",
@@ -138,11 +118,7 @@
     "value": 150000,
     "item": "small_repairkit",
     "count": 2,
-    "end": {
-      "effect": [
-        { "u_buy_item": "sgs_leatherjacket", "count": 1 },
-        { "u_buy_item": "sgs_credit", "count": 3 } ]
-    },
+    "end": { "effect": [ { "u_buy_item": "sgs_leatherjacket", "count": 1 }, { "u_buy_item": "sgs_credit", "count": 3 } ] },
     "origins": [ "ORIGIN_SECONDARY" ],
     "dialogue": {
       "describe": "I've been running low on gun repair kits. It seems like conflict with other stations has flared up again recently, and we're quickly running through supplies. We'll reach a maintenance bottleneck soon, and we can't afford to have that happen.",

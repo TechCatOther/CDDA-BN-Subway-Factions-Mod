@@ -14,9 +14,8 @@
     "symbol": "#",
     "color": "light_gray",
     "ammo_type": [ "223" ],
-    "capacity": 30,
-    "reliability": 8,
-    "flags": [ "MAG_COMPACT" ]
+    "flags": [ "MAG_COMPACT" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "223": 30 } } ]
   },
   {
     "id": "sgs_marmag_30rd",
@@ -33,9 +32,8 @@
     "symbol": "#",
     "color": "light_gray",
     "ammo_type": [ "sgs86" ],
-    "capacity": 25,
-    "reliability": 8,
-    "flags": [ "MAG_COMPACT" ]
+    "flags": [ "MAG_COMPACT" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "sgs86": 25 } } ]
   },
   {
     "id": "sgs_spearmag",
@@ -50,10 +48,9 @@
     "material": "steel",
     "symbol": "#",
     "color": "light_gray",
-    "ammo_type": "308",
-    "capacity": 10,
-    "reliability": 9,
-    "flags": [ "MAG_COMPACT" ]
+    "ammo_type": [ "308" ],
+    "flags": [ "MAG_COMPACT" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "308": 10 } } ]
   },
   {
     "id": "sgs_hornet",
@@ -67,11 +64,10 @@
     "price": 490000,
     "price_postapoc": 6000,
     "to_hit": -1,
-    "bashing": 12,
     "material": [ "steel", "plastic" ],
     "symbol": "(",
     "color": "light_gray",
-    "ammo": "223",
+    "ammo": [ "223" ],
     "dispersion": 160,
     "durability": 8,
     "min_cycle_recoil": 1350,
@@ -91,7 +87,8 @@
       [ "sling", 1 ],
       [ "underbarrel", 1 ]
     ],
-    "magazines": [ [ "223", [ "sgs_hornmag_30rd" ] ] ]
+    "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "sgs_hornmag_30rd" ] } ],
+    "melee_damage": { "bash": 12 }
   },
   {
     "id": "sgs_marauder",
@@ -105,11 +102,10 @@
     "price": 490000,
     "price_postapoc": 6000,
     "to_hit": -1,
-    "bashing": 12,
     "material": [ "steel", "plastic" ],
     "symbol": "(",
     "color": "light_gray",
-    "ammo": "sgs86",
+    "ammo": [ "sgs86" ],
     "dispersion": 180,
     "durability": 7,
     "min_cycle_recoil": 1550,
@@ -129,7 +125,8 @@
       [ "sling", 1 ],
       [ "underbarrel", 1 ]
     ],
-    "magazines": [ [ "sgs86", [ "sgs_marmag_30rd" ] ] ]
+    "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "sgs_marmag_30rd" ] } ],
+    "melee_damage": { "bash": 12 }
   },
   {
     "id": "sgs_spearhead",
@@ -143,17 +140,16 @@
     "price": 205000,
     "price_postapoc": 9000,
     "to_hit": -1,
-    "bashing": 12,
     "material": [ "steel", "plastic" ],
     "symbol": "(",
     "color": "brown",
-    "ammo": "308",
+    "ammo": [ "308" ],
     "ranged_damage": { "damage_type": "stab", "amount": 5 },
     "dispersion": 100,
     "durability": 8,
     "min_cycle_recoil": 2500,
     "default_mods": [ "rifle_scope", "grip" ],
-    "barrel_length": "500 ml",
+    "barrel_volume": "500 ml",
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 1 ],
@@ -168,6 +164,7 @@
       [ "stock mount", 1 ],
       [ "underbarrel mount", 1 ]
     ],
-    "magazines": [ [ "308", [ "sgs_spearmag" ] ] ]
+    "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "sgs_spearmag" ] } ],
+    "melee_damage": { "bash": 12 }
   }
 ]

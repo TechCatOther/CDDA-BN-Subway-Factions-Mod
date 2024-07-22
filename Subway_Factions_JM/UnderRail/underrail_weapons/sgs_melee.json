@@ -11,21 +11,22 @@
     "flags": [ "NONCONDUCTIVE", "ALWAYS_TWOHAND" ],
     "techniques": [ "WBLOCK_1", "BRUTAL", "WIDE", "SWEEP" ],
     "volume": "1250 ml",
-    "bashing": 50,
     "to_hit": 1,
     "price": 12000,
     "price_postapoc": 500,
     "qualities": [ [ "HAMMER", 1 ] ],
-    "ammo": "battery",
+    "ammo": [ "battery" ],
     "charges_per_use": 50,
-    "use_action": "TAZER",
-    "magazines": [
-      [
-        "battery",
-        [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ]
-      ]
+    "use_action": [ "TAZER" ],
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": [ "BATTERY_MEDIUM", "BATTERY_HEAVY" ],
+        "default_magazine": "medium_battery_cell"
+      }
     ],
-    "magazine_well": 1
+    "melee_damage": { "bash": 50 }
   },
   {
     "id": "sgs_knife_combat",
@@ -38,25 +39,25 @@
     "price": 10000,
     "price_postapoc": 1250,
     "to_hit": 1,
-    "bashing": 2,
-    "cutting": 18,
     "material": [ "steel", "plastic" ],
     "symbol": ";",
     "color": "dark_gray",
     "min_skills": [ [ "weapon", 2 ], [ "melee", 1 ] ],
-    "techniques": "RAPID",
+    "techniques": [ "RAPID" ],
     "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 19 ] ],
     "thrown_damage": [ { "damage_type": "stab", "amount": 15 } ],
-    "ammo": "battery",
+    "ammo": [ "battery" ],
     "charges_per_use": 50,
-    "use_action": "TAZER",
-    "magazines": [
-      [
-        "battery",
-        [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ]
-      ]
+    "flags": [ "DURABLE_MELEE", "SHEATH_KNIFE", "NPC_THROWN" ],
+    "use_action": [ "TAZER" ],
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": [ "BATTERY_MEDIUM", "BATTERY_HEAVY" ],
+        "default_magazine": "medium_battery_cell"
+      }
     ],
-    "magazine_well": 1,
-    "flags": [ "STAB", "DURABLE_MELEE", "SHEATH_KNIFE", "NPC_THROWN" ]
+    "melee_damage": { "bash": 2, "stab": 18 }
   }
 ]

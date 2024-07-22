@@ -34,9 +34,7 @@
     "type": "item_group",
     "id": "NC_SSGSCIV_weapon",
     "subtype": "collection",
-    "entries": [
-      { "item": "sgs_hawker", "prob": 15, "charges": 20 }
-    ]
+    "entries": [ { "item": "sgs_hawker", "prob": 15, "charges": 20 } ]
   },
   {
     "type": "item_group",
@@ -54,10 +52,7 @@
     "type": "item_group",
     "id": "NC_SSGSCIV_carry",
     "subtype": "collection",
-    "entries": [
-      { "group": "preserved_food", "repeat": [ 1, 2 ], "prob": 35 },
-      { "group": "drugs_heal_simple", "prob": 20 }
-    ]
+    "entries": [ { "group": "preserved_food", "count": [ 1, 2 ], "prob": 35 }, { "group": "drugs_heal_simple", "prob": 20 } ]
   },
   {
     "type": "item_group",

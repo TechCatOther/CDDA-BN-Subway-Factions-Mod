@@ -1,6 +1,7 @@
 [
   {
     "result": "reloaded_sgs86_b",
+    "activity_level": "LIGHT_EXERCISE",
     "type": "recipe",
     "category": "CC_AMMO",
     "subcategory": "CSC_AMMO_RIFLE",
@@ -22,6 +23,7 @@
   },
   {
     "result": "sgs86_bp",
+    "activity_level": "LIGHT_EXERCISE",
     "type": "recipe",
     "category": "CC_AMMO",
     "subcategory": "CSC_AMMO_RIFLE",
@@ -38,6 +40,7 @@
   },
   {
     "result": "reloaded_sgs5_b",
+    "activity_level": "LIGHT_EXERCISE",
     "type": "recipe",
     "category": "CC_AMMO",
     "subcategory": "CSC_AMMO_PISTOL",
@@ -58,6 +61,7 @@
   },
   {
     "result": "sgs5_bp",
+    "activity_level": "LIGHT_EXERCISE",
     "type": "recipe",
     "category": "CC_AMMO",
     "subcategory": "CSC_AMMO_PISTOL",
@@ -74,6 +78,7 @@
   },
   {
     "result": "sgs_acid_b_c",
+    "activity_level": "LIGHT_EXERCISE",
     "type": "recipe",
     "category": "CC_AMMO",
     "subcategory": "CSC_AMMO_PISTOL",
@@ -87,13 +92,11 @@
     "reversible": true,
     "using": [ [ "ammo_bullet", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "components": [
-      [ [ "sgs_acid_vial", 1 ] ],
-      [ [ "acid", 7 ], [ "chem_nitric_acid", 5 ], [ "chem_sulphuric_acid", 4 ] ]
-    ]
+    "components": [ [ [ "sgs_acid_vial", 1 ] ], [ [ "chem_nitric_acid", 5 ], [ "chem_sulphuric_acid", 4 ] ] ]
   },
   {
     "type": "recipe",
+    "activity_level": "MODERATE_EXERCISE",
     "result": "sgs_acid_vial",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_OTHER",

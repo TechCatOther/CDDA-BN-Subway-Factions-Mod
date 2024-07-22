@@ -12,10 +12,9 @@
     "material": [ "steel" ],
     "symbol": "#",
     "color": "light_gray",
-    "ammo_type": "545x39",
-    "capacity": 30,
-    "reliability": 5,
-    "flags": [ "MAG_COMPACT" ]
+    "ammo_type": [ "545x39" ],
+    "flags": [ "MAG_COMPACT" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "545x39": 30 } } ]
   },
   {
     "id": "metro_kalmag",
@@ -30,10 +29,9 @@
     "material": [ "plastic" ],
     "symbol": "#",
     "color": "light_gray",
-    "ammo_type": "545x39",
-    "capacity": 40,
-    "reliability": 9,
-    "flags": [ "MAG_COMPACT" ]
+    "ammo_type": [ "545x39" ],
+    "flags": [ "MAG_COMPACT" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "545x39": 40 } } ]
   },
   {
     "id": "metro_bastard",
@@ -48,16 +46,15 @@
     "price": 390000,
     "price_postapoc": 4000,
     "to_hit": -1,
-    "bashing": 11,
     "material": [ "steel", "wood" ],
     "symbol": "(",
     "color": "brown",
-    "ammo": "545x39",
+    "ammo": [ "545x39" ],
     "skill": "rifle",
     "dispersion": 380,
     "durability": 8,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 4 ] ],
-    "barrel_length": "250 ml",
+    "barrel_volume": "250 ml",
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 1 ],
@@ -72,7 +69,8 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-    "magazines": [ [ "545x39", [ "metro_basmag" ] ] ]
+    "melee_damage": { "bash": 11 },
+    "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "rigid": true, "item_restriction": [ "metro_basmag" ] } ]
   },
   {
     "id": "metro_kalashtwen",
@@ -86,15 +84,14 @@
     "price": 420000,
     "price_postapoc": 4500,
     "to_hit": -1,
-    "bashing": 11,
     "material": [ "steel", "plastic" ],
     "symbol": "(",
     "color": "brown",
-    "ammo": "545x39",
+    "ammo": [ "545x39" ],
     "skill": "rifle",
     "dispersion": 150,
     "durability": 7,
-    "barrel_length": "250 ml",
+    "barrel_volume": "250 ml",
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "2 rd.", 2 ], [ "AUTO", "auto", 4 ] ],
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -110,7 +107,8 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-    "magazines": [ [ "545x39", [ "metro_kalmag" ] ] ]
+    "melee_damage": { "bash": 11 },
+    "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "rigid": true, "item_restriction": [ "metro_kalmag" ] } ]
   },
   {
     "id": "metro_shambler",
@@ -124,14 +122,13 @@
     "price": 75000,
     "price_postapoc": 1250,
     "to_hit": -1,
-    "bashing": 12,
     "material": [ "steel", "wood" ],
     "dispersion": 855,
     "durability": 6,
     "clip_size": 6,
     "ranged_damage": { "damage_type": "stab", "amount": 3 },
     "reload": 500,
-    "barrel_length": "36 ml",
+    "barrel_volume": "36 ml",
     "valid_mod_locations": [
       [ "accessories", 2 ],
       [ "sling", 1 ],
@@ -142,7 +139,47 @@
       [ "sights mount", 1 ],
       [ "underbarrel mount", 1 ]
     ],
-    "flags": [ "RELOAD_ONE", "RELOAD_EJECT" ]
+    "flags": [ "RELOAD_ONE", "RELOAD_EJECT" ],
+    "melee_damage": { "bash": 12 },
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "shot": 6 } } ]
+  },
+  {
+    "id": "metro_an94",
+    "looks_like": "ar15",
+    "type": "GUN",
+    "reload_noise_volume": 10,
+    "name": { "str": "AN-94" },
+    "description": "Intended to replace the AK-74, this rifle uses a sophisticated mechanism to delay felt recoil, along with a very fast two-round burst mode.  While its increased complexity prevented it from being adopted by the Russian military, it has seen service among their special forces.",
+    "weight": "3850 g",
+    "volume": "4147 ml",
+    "longest_side": "95 cm",
+    "price": 420000,
+    "price_postapoc": 4500,
+    "to_hit": -1,
+    "material": [ "steel", "plastic" ],
+    "symbol": "(",
+    "color": "brown",
+    "ammo": [ "545x39" ],
+    "skill": "rifle",
+    "dispersion": 150,
+    "durability": 7,
+    "barrel_volume": "250 ml",
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "2 rd.", 2 ], [ "AUTO", "auto", 4 ] ],
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "brass catcher", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "melee_damage": { "bash": 11 },
+    "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "rigid": true, "item_restriction": [ "ak74mag", "rpk74mag" ] } ]
   }
-
 ]

@@ -1,5 +1,5 @@
 [
-   {
+  {
     "id": "sgs5bigmag",
     "looks_like": "glock17_17",
     "type": "MAGAZINE",
@@ -12,11 +12,10 @@
     "material": "plastic",
     "symbol": "#",
     "color": "light_gray",
-    "ammo_type": "sgs5",
-    "capacity": 28,
-    "reliability": 7,
+    "ammo_type": [ "sgs5" ],
     "reload_time": 140,
-    "flags": [ "MAG_COMPACT" ]
+    "flags": [ "MAG_COMPACT" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "sgs5": 28 } } ]
   },
   {
     "id": "sgs5mag",
@@ -31,10 +30,9 @@
     "material": "plastic",
     "symbol": "#",
     "color": "light_gray",
-    "ammo_type": "sgs5",
-    "capacity": 20,
-    "reliability": 8,
-    "flags": [ "MAG_COMPACT" ]
+    "ammo_type": [ "sgs5" ],
+    "flags": [ "MAG_COMPACT" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "sgs5": 20 } } ]
   },
   {
     "id": "sgs_hawker",
@@ -47,18 +45,17 @@
     "price": 69000,
     "price_postapoc": 2500,
     "to_hit": -2,
-    "bashing": 8,
     "material": [ "plastic", "steel" ],
     "symbol": "(",
     "color": "dark_gray",
-    "ammo": "sgs5",
+    "ammo": [ "sgs5" ],
     "ranged_damage": { "damage_type": "stab", "amount": -1 },
     "dispersion": 460,
     "durability": 6,
     "blackpowder_tolerance": 58,
     "min_cycle_recoil": 330,
-    "magazine_well": 1,
-    "magazines": [ [ "sgs5", [ "sgs5mag", "sgs5bigmag" ] ] ]
+    "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "sgs5mag", "sgs5bigmag" ] } ],
+    "melee_damage": { "bash": 8 }
   },
   {
     "id": "sgs_laspistol",
@@ -71,7 +68,6 @@
     "volume": "2500 ml",
     "price": 40000,
     "to_hit": -1,
-    "bashing": 8,
     "material": [ "plastic", "copper" ],
     "symbol": "(",
     "color": "magenta",
@@ -83,12 +79,19 @@
     "durability": 10,
     "loudness": 8,
     "reload": 500,
+    "ammo_to_fire": 20,
     "valid_mod_locations": [ [ "accessories", 4 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] ],
     "ammo_effects": [ "LASER", "DRAW_AS_LINE" ],
-    "flags": [ "NEVER_JAMS", "FIRE_20", "NON-FOULING" ],
-    "magazines": [
-      [ "battery", [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ] ]
-    ]
+    "flags": [ "NEVER_JAMS", "NON_FOULING" ],
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": [ "BATTERY_MEDIUM", "BATTERY_HEAVY" ],
+        "default_magazine": "medium_battery_cell"
+      }
+    ],
+    "melee_damage": { "bash": 8 }
   },
   {
     "id": "sgs_acid_pistol",
@@ -102,16 +105,17 @@
     "price": 69000,
     "price_postapoc": 42500,
     "to_hit": -2,
-    "bashing": 8,
     "material": [ "plastic", "steel" ],
     "symbol": "(",
     "color": "dark_gray",
-    "ammo": "sgs_acid_b",
+    "ammo": [ "sgs_acid_b" ],
     "skill": "pistol",
     "ranged_damage": { "damage_type": "stab", "amount": -1 },
     "dispersion": 760,
     "durability": 4,
     "clip_size": 5,
-    "min_cycle_recoil": 330
+    "min_cycle_recoil": 330,
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "sgs_acid_b": 5 } } ],
+    "melee_damage": { "bash": 8 }
   }
 ]

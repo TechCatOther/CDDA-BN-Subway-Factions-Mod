@@ -1,5 +1,5 @@
 [
-   {
+  {
     "id": "metro_lolifemag",
     "looks_like": "glock17_17",
     "type": "MAGAZINE",
@@ -12,12 +12,11 @@
     "material": "plastic",
     "symbol": "#",
     "color": "light_gray",
-    "ammo_type": "44",
-    "capacity": 8,
-    "reliability": 6,
-    "flags": [ "MAG_COMPACT" ]
-   },
-   {
+    "ammo_type": [ "44" ],
+    "flags": [ "MAG_COMPACT" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "44": 8 } } ]
+  },
+  {
     "id": "metro_lolifebigmag",
     "looks_like": "glock17_17",
     "type": "MAGAZINE",
@@ -30,16 +29,15 @@
     "material": "plastic",
     "symbol": "#",
     "color": "light_gray",
-    "ammo_type": "44",
-    "capacity": 20,
-    "reliability": 5,
-    "flags": [ "MAG_COMPACT" ]
-   },
-   {
+    "ammo_type": [ "44" ],
+    "flags": [ "MAG_COMPACT" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "44": 20 } } ]
+  },
+  {
     "id": "metro_lolife_pistol",
+    "copy-from": "pistol_base",
     "looks_like": "glock_17",
     "type": "GUN",
-    "reload_noise_volume": 10,
     "name": { "str_sp": "Lolife" },
     "description": "The Lolife is a metro-made semi-automatic handgun with a standard eight-round magazine chambered in .44 Magnum. As the Lolife is a metro-made weapon, it has very little known history. It appears that Lolife has been produced since at least 2023.",
     "weight": "1400 g",
@@ -47,15 +45,16 @@
     "price": 87500,
     "price_postapoc": 2750,
     "to_hit": -2,
-    "bashing": 12,
+    "melee_damage": { "bash": 12 },
     "material": [ "steel", "wood" ],
     "symbol": "(",
     "color": "light_gray",
-    "ammo": "44",
+    "ammo": [ "44" ],
     "skill": "pistol",
     "ranged_damage": { "damage_type": "stab", "amount": -3 },
     "dispersion": 500,
     "durability": 6,
+    "blackpowder_tolerance": 32,
     "min_cycle_recoil": 1200,
     "valid_mod_locations": [
       [ "accessories", 2 ],
@@ -71,8 +70,6 @@
       [ "underbarrel", 1 ]
     ],
     "faults": [ "fault_gun_blackpowder", "fault_gun_dirt", "fault_gun_chamber_spent" ],
-    "magazine_well": 1,
-    "magazines": [ [ "44", [ "metro_lolifemag", "metro_lolifebigmag" ] ] ]
+    "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "metro_lolifemag", "metro_lolifebigmag" ] } ]
   }
-
 ]

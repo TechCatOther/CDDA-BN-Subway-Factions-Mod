@@ -36,10 +36,7 @@
     "type": "item_group",
     "id": "NC_REICHH_weapon",
     "subtype": "distribution",
-    "entries": [
-      { "item": "m240", "prob": 30, "charges": 50 },
-      { "item": "m60", "prob": 10, "charges": 50 }
-    ]
+    "entries": [ { "item": "m240", "prob": 30, "charges": 50 }, { "item": "m60", "prob": 10, "charges": 50 } ]
   },
   {
     "type": "item_group",
@@ -68,11 +65,7 @@
     "type": "item_group",
     "id": "reich_legs",
     "subtype": "distribution",
-    "entries": [
-      { "item": "pants_army", "prob": 35 },
-      { "item": "pants", "prob": 5 },
-      { "item": "pants_cargo", "prob": 15 }
-    ]
+    "entries": [ { "item": "pants_army", "prob": 35 }, { "item": "pants", "prob": 5 }, { "item": "pants_cargo", "prob": 15 } ]
   },
   {
     "type": "item_group",
@@ -89,9 +82,9 @@
     "id": "NC_REICHH_carry",
     "subtype": "collection",
     "entries": [
-      { "group": "cannedfood", "repeat": [ 1, 2 ] },
-      { "group": "drugs_heal_simple", "repeat": [ 1, 6 ] },
-      { "item": "308", "prob": 75, "repeat": [ 2, 3 ] }
+      { "group": "cannedfood", "count": [ 1, 2 ] },
+      { "group": "drugs_heal_simple", "count": [ 1, 6 ] },
+      { "item": "308", "prob": 75, "count": [ 2, 3 ] }
     ]
   }
 ]

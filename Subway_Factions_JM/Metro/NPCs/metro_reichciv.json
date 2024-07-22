@@ -34,9 +34,7 @@
     "type": "item_group",
     "id": "NC_REICHCIV_weapon",
     "subtype": "collection",
-    "entries": [
-      { "item": "metro_lolife_pistol", "prob": 40, "charges": 8 }
-    ]
+    "entries": [ { "item": "metro_lolife_pistol", "prob": 40, "charges": 8 } ]
   },
   {
     "type": "item_group",
@@ -54,7 +52,7 @@
     "id": "NC_REICHCIV_carry",
     "subtype": "collection",
     "entries": [
-      { "group": "cannedfood", "repeat": [ 1, 2 ], "prob": 35 },
+      { "group": "cannedfood", "count": [ 1, 2 ], "prob": 35 },
       { "item": "metro_lolifemag", "ammo-item": "44magnum", "charges": 8, "prob": 30 },
       { "item": "metro_lolifebigmag", "ammo-item": "44magnum", "charges": 20, "prob": 20 },
       { "group": "drugs_heal_simple", "prob": 20 }
@@ -64,7 +62,14 @@
     "type": "item_group",
     "subtype": "distribution",
     "id": "nsm_nshirts",
-    "items": [ [ "hoodie", 20 ], [ "longshirt", 35 ], [ "coat_winter", 35 ], [ "metro_nsmjacket", 10 ], [ "tshirt", 45 ], [ "ski_jacket", 10 ] ]
+    "items": [
+      [ "hoodie", 20 ],
+      [ "longshirt", 35 ],
+      [ "coat_winter", 35 ],
+      [ "metro_nsmjacket", 10 ],
+      [ "tshirt", 45 ],
+      [ "ski_jacket", 10 ]
+    ]
   },
   {
     "type": "item_group",

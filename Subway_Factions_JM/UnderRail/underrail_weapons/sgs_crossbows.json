@@ -14,10 +14,9 @@
     "flags": "PRIMITIVE_RANGED_WEAPON",
     "skill": "rifle",
     "min_strength": 8,
-    "ammo": "bolt",
+    "ammo": [ "bolt" ],
     "weight": "2728 g",
     "volume": "1500 ml",
-    "bashing": 11,
     "to_hit": 1,
     "loudness": 10,
     "ranged_damage": { "damage_type": "stab", "amount": 40 },
@@ -26,7 +25,9 @@
     "durability": 6,
     "clip_size": 1,
     "reload": 800,
-    "valid_mod_locations": [ [ "dampening", 1 ], [ "rail mount", 1 ], [ "sights mount", 1 ], [ "underbarrel mount", 1 ] ]
+    "valid_mod_locations": [ [ "dampening", 1 ], [ "rail mount", 1 ], [ "sights mount", 1 ], [ "underbarrel mount", 1 ] ],
+    "melee_damage": { "bash": 11 },
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "bolt": 1 } } ]
   },
   {
     "id": "sgs_cyclon",
@@ -42,11 +43,10 @@
     "flags": "PRIMITIVE_RANGED_WEAPON",
     "skill": "rifle",
     "min_strength": 7,
-    "ammo": "bolt",
+    "ammo": [ "bolt" ],
     "weight": "3000 g",
     "volume": "1750 ml",
     "price_postapoc": 6000,
-    "bashing": 11,
     "to_hit": 1,
     "ranged_damage": { "damage_type": "stab", "amount": 35 },
     "range": 22,
@@ -65,6 +65,8 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ],
       [ "dampening", 1 ]
-    ]
+    ],
+    "melee_damage": { "bash": 11 },
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "bolt": 1 } } ]
   }
 ]

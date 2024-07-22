@@ -40,18 +40,13 @@
     "type": "item_group",
     "id": "NC_SGSDOC_SHOPKEEP_misc",
     "subtype": "collection",
-    "items": [
-      { "group": "infantry_medical_gear", "count": [ 4, 9 ] },
-      { "group": "hospital_medical_items", "count": [ 6, 8 ] }
-    ]
+    "items": [ { "group": "infantry_medical_gear", "count": [ 4, 9 ] }, { "group": "hospital_medical_items", "count": [ 6, 8 ] } ]
   },
   {
     "type": "item_group",
     "id": "NC_SGSDOC_weapon",
     "subtype": "distribution",
-    "entries": [
-      { "item": "scalpel" }
-    ]
+    "entries": [ { "item": "scalpel" } ]
   },
   {
     "type": "item_group",
@@ -72,17 +67,15 @@
     "type": "item_group",
     "id": "NC_SGSDOC_carry",
     "subtype": "collection",
-    "entries": [
-      { "item": "null" }
-    ]
+    "entries": [ { "item": "null" } ]
   },
   {
     "type": "item_group",
     "id": "NC_SGSDOC_SHOP",
     "subtype": "collection",
     "entries": [
-      { "group": "infantry_medical_gear", "prob": 80, "repeat": [ 4, 10 ] },
-      { "group": "hospital_medical_items", "prob": 80, "repeat": [ 6, 15 ] }
+      { "group": "infantry_medical_gear", "prob": 80, "count": [ 4, 10 ] },
+      { "group": "hospital_medical_items", "prob": 80, "count": [ 6, 15 ] }
     ]
   },
   {
@@ -91,25 +84,13 @@
     "dynamic_line": {
       "u_female": true,
       "yes": "Do you want anything from me? I'm a bit busy being at the moment.",
-      "no": "Do you want anything from me? I'm a bit busy being at the moment."},
+      "no": "Do you want anything from me? I'm a bit busy being at the moment."
+    },
     "responses": [
-      {
-        "text": "What is it like being a doctor in this station?",
-        "topic": "TALK_SGSDOC_infotown"
-      },
-      {
-        "text": "Do you have any medical items for me?",
-        "effect": "start_trade",
-        "topic": "TALK_SGSDOC_Town"
-      },
-      {
-        "text": "Do you have a task for me?",
-        "topic": "TALK_MISSION_LIST"
-      },
-      {
-        "text": "Goodbye, thank you for your time.",
-        "topic": "TALK_DONE"
-      }
+      { "text": "What is it like being a doctor in this station?", "topic": "TALK_SGSDOC_infotown" },
+      { "text": "Do you have any medical items for me?", "effect": "start_trade", "topic": "TALK_SGSDOC_Town" },
+      { "text": "Do you have a task for me?", "topic": "TALK_MISSION_LIST" },
+      { "text": "Goodbye, thank you for your time.", "topic": "TALK_DONE" }
     ]
   },
   {
@@ -118,13 +99,9 @@
     "dynamic_line": {
       "u_female": true,
       "yes": "It's actually pretty easy, all things considered. Most of the time people come back with little more than a few cave hopper scratches. Watch out for nighstalkers though, they can be pretty nasty.",
-      "no": "It's actually pretty easy, all things considered. Most of the time people come back with little more than a few cave hopper scratches. Watch out for nighstalkers though, they can be pretty nasty."},
-    "responses": [
-      {
-        "text": "Got it.",
-        "topic": "TALK_SGSDOC_Town"
-      }
-    ]
+      "no": "It's actually pretty easy, all things considered. Most of the time people come back with little more than a few cave hopper scratches. Watch out for nighstalkers though, they can be pretty nasty."
+    },
+    "responses": [ { "text": "Got it.", "topic": "TALK_SGSDOC_Town" } ]
   },
   {
     "id": "MISSION_GET_SGS_DOCS_ITEM",
@@ -140,7 +117,8 @@
       "effect": [
         { "u_buy_item": "bio_power_storage", "count": 1 },
         { "u_buy_item": "bfipowder", "count": 1 },
-        { "u_buy_item": "1st_aid", "count": 3 } ]
+        { "u_buy_item": "1st_aid", "count": 3 }
+      ]
     },
     "origins": [ "ORIGIN_SECONDARY" ],
     "dialogue": {

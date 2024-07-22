@@ -39,18 +39,13 @@
     "type": "item_group",
     "id": "NC_METDOC_SHOPKEEP_misc",
     "subtype": "collection",
-    "items": [
-      { "group": "infantry_medical_gear", "count": [ 4, 9 ] },
-      { "group": "hospital_medical_items", "count": [ 6, 8 ] }
-    ]
+    "items": [ { "group": "infantry_medical_gear", "count": [ 4, 9 ] }, { "group": "hospital_medical_items", "count": [ 6, 8 ] } ]
   },
   {
     "type": "item_group",
     "id": "NC_METDOC_weapon",
     "subtype": "distribution",
-    "entries": [
-      { "item": "scalpel" }
-    ]
+    "entries": [ { "item": "scalpel" } ]
   },
   {
     "type": "item_group",
@@ -72,17 +67,15 @@
     "type": "item_group",
     "id": "NC_METDOC_carry",
     "subtype": "collection",
-    "entries": [
-      { "item": "null" }
-    ]
+    "entries": [ { "item": "null" } ]
   },
   {
     "type": "item_group",
     "id": "NC_METDOC_SHOP",
     "subtype": "collection",
     "entries": [
-      { "group": "infantry_medical_gear", "prob": 80, "repeat": [ 4, 10 ] },
-      { "group": "hospital_medical_items", "prob": 80, "repeat": [ 6, 15 ] }
+      { "group": "infantry_medical_gear", "prob": 80, "count": [ 4, 10 ] },
+      { "group": "hospital_medical_items", "prob": 80, "count": [ 6, 15 ] }
     ]
   },
   {
@@ -91,21 +84,12 @@
     "dynamic_line": {
       "u_female": true,
       "yes": "Do you want anything from me? I'm a bit busy being at the moment.",
-      "no": "Do you want anything from me? I'm a bit busy being at the moment."},
+      "no": "Do you want anything from me? I'm a bit busy being at the moment."
+    },
     "responses": [
-      {
-        "text": "What is it like being a doctor in this metro?",
-        "topic": "TALK_METDOC_infotown"
-      },
-      {
-        "text": "Do you have any medical items for me?",
-        "effect": "start_trade",
-        "topic": "TALK_METDOC_Town"
-      },
-      {
-        "text": "Goodbye, thank you for your time.",
-        "topic": "TALK_DONE"
-      }
+      { "text": "What is it like being a doctor in this metro?", "topic": "TALK_METDOC_infotown" },
+      { "text": "Do you have any medical items for me?", "effect": "start_trade", "topic": "TALK_METDOC_Town" },
+      { "text": "Goodbye, thank you for your time.", "topic": "TALK_DONE" }
     ]
   },
   {
@@ -114,12 +98,8 @@
     "dynamic_line": {
       "u_female": true,
       "yes": "Serving the Reich can be tedious at times, very, very, very tedious. Sometimes I really do doubt myself, but the prospect of giving up when those red bastards are still out there is too much to bear.",
-      "no": "Serving the Reich can be tedious at times, very, very, very tedious. Sometimes I really do doubt myself, but the prospect of giving up when those red bastards are still out there is too much to bear."},
-    "responses": [
-      {
-        "text": "Got it.",
-        "topic": "TALK_METDOC_Town"
-      }
-    ]
+      "no": "Serving the Reich can be tedious at times, very, very, very tedious. Sometimes I really do doubt myself, but the prospect of giving up when those red bastards are still out there is too much to bear."
+    },
+    "responses": [ { "text": "Got it.", "topic": "TALK_METDOC_Town" } ]
   }
 ]

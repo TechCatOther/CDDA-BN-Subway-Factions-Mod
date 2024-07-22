@@ -13,9 +13,7 @@
     "symbol": "[",
     "looks_like": "hat_cotton",
     "color": "dark_gray",
-    "covers": [ "HEAD" ],
-    "coverage": 40,
-    "encumbrance": 10,
+    "armor": [ { "coverage": 40, "encumbrance": 4, "covers": [ "head" ] } ],
     "warmth": 5,
     "material_thickness": 2,
     "environmental_protection": 1,
@@ -35,10 +33,37 @@
     "symbol": "[",
     "looks_like": "duster",
     "color": "brown",
-    "covers": [ "TORSO", "ARMS" ],
-    "coverage": 90,
-    "encumbrance": 17,
-    "storage": "3 L",
+    "armor": [ { "covers": [ "torso", "arm_l", "arm_r" ], "coverage": 90, "encumbrance": 17 } ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "750 ml",
+        "max_contains_weight": "2 kg",
+        "moves": 80,
+        "max_item_length": "10 cm"
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "750 ml",
+        "max_contains_weight": "2 kg",
+        "moves": 80,
+        "max_item_length": "10 cm"
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "750 ml",
+        "max_contains_weight": "2 kg",
+        "moves": 80,
+        "max_item_length": "10 cm"
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "750 ml",
+        "max_contains_weight": "2 kg",
+        "moves": 80,
+        "max_item_length": "10 cm"
+      }
+    ],
     "warmth": 30,
     "material_thickness": 3,
     "environmental_protection": 1,
@@ -54,24 +79,33 @@
     "volume": "1320 ml",
     "price": 1250,
     "price_postapoc": 2000,
-    "rigid": false,
     "material": [ "cotton", "kevlar" ],
     "symbol": "[",
     "looks_like": "ragpouch",
     "color": "dark_gray",
-    "covers": [ "TORSO", "ARMS"  ],
-    "coverage": 90,
-    "encumbrance": 10,
-    "storage": "1500 ml",
+    "armor": [ { "covers": [ "torso", "arm_l", "arm_r" ], "coverage": 90, "encumbrance": 10 } ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "rigid": false,
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "15 cm",
+        "moves": 80
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "10 kg",
+        "max_item_length": "133 cm",
+        "moves": 40,
+        "volume_encumber_modifier": 0.4,
+        "flag_restriction": [ "MAG_COMPACT", "MAG_BULKY" ]
+      }
+    ],
     "material_thickness": 4,
-    "use_action": {
-      "type": "holster",
-      "holster_prompt": "Stash ammo",
-      "holster_msg": "You stash your %s.",
-      "max_volume": "1500 ml",
-      "draw_cost": 40,
-      "flags": [ "MAG_COMPACT", "MAG_BULKY" ]
-    },
+    "use_action": { "type": "holster", "holster_prompt": "Stash ammo", "holster_msg": "You stash your %s." },
     "flags": [ "WATER_FRIENDLY", "BELTED" ]
   },
   {
@@ -89,9 +123,13 @@
     "symbol": "[",
     "looks_like": "towel",
     "color": "light_red",
-    "covers": [ "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ],
-    "coverage": 60,
-    "encumbrance": 50,
+    "armor": [
+      {
+        "encumbrance": 30,
+        "coverage": 100,
+        "covers": [ "torso", "arm_l", "arm_r", "hand_l", "hand_r", "leg_l", "leg_r", "foot_l", "foot_r" ]
+      }
+    ],
     "warmth": 20,
     "material_thickness": 1,
     "environmental_protection": 1,
@@ -110,9 +148,7 @@
     "symbol": "[",
     "looks_like": "hat_knit",
     "color": "brown",
-    "covers": [ "HEAD" ],
-    "coverage": 95,
-    "encumbrance": 10,
+    "armor": [ { "coverage": 95, "encumbrance": 10, "covers": [ "head" ] } ],
     "warmth": 70,
     "material_thickness": 3
   },
@@ -130,9 +166,7 @@
     "symbol": "[",
     "looks_like": "hat_cotton",
     "color": "dark_gray",
-    "covers": [ "HEAD" ],
-    "coverage": 40,
-    "encumbrance": 10,
+    "armor": [ { "coverage": 40, "encumbrance": 10, "covers": [ "head" ] } ],
     "warmth": 4,
     "material_thickness": 2,
     "environmental_protection": 1,
@@ -151,10 +185,16 @@
     "symbol": "[",
     "looks_like": "jacket_light",
     "color": "dark_gray",
-    "covers": [ "TORSO", "ARMS" ],
-    "coverage": 85,
-    "encumbrance": 15,
-    "storage": "500 ml",
+    "armor": [ { "covers": [ "torso", "arm_l", "arm_r" ], "coverage": 85, "encumbrance": 15 } ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "500 ml",
+        "max_contains_weight": "2 kg",
+        "moves": 80,
+        "max_item_length": "10 cm"
+      }
+    ],
     "warmth": 20,
     "material_thickness": 3,
     "valid_mods": [ "steel_padded" ],
@@ -169,24 +209,57 @@
     "volume": "1320 ml",
     "price": 1250,
     "price_postapoc": 2000,
-    "rigid": false,
     "material": [ "cotton", "kevlar" ],
     "symbol": "[",
     "looks_like": "ragpouch",
     "color": "dark_gray",
-    "covers": [ "TORSO", "ARMS" ],
-    "coverage": 90,
+    "armor": [ { "covers": [ "torso", "arm_l", "arm_r" ], "coverage": 90, "encumbrance": 15 } ],
     "material_thickness": 6,
-    "encumbrance": 15,
-    "storage": "2000 ml",
-    "use_action": {
-      "type": "holster",
-      "holster_prompt": "Stash ammo",
-      "holster_msg": "You stash your %s.",
-      "max_volume": "1500 ml",
-      "draw_cost": 40,
-      "flags": [ "MAG_COMPACT", "MAG_BULKY" ]
-    },
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "rigid": false,
+        "max_contains_volume": "500 ml",
+        "max_contains_weight": "2 kg",
+        "moves": 80,
+        "max_item_length": "10 cm"
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "rigid": false,
+        "max_contains_volume": "500 ml",
+        "max_contains_weight": "2 kg",
+        "moves": 80,
+        "max_item_length": "10 cm"
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "rigid": false,
+        "max_contains_volume": "500 ml",
+        "max_contains_weight": "2 kg",
+        "moves": 80,
+        "max_item_length": "10 cm"
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "rigid": false,
+        "max_contains_volume": "500 ml",
+        "max_contains_weight": "2 kg",
+        "moves": 80,
+        "max_item_length": "10 cm"
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "10 kg",
+        "max_item_length": "133 cm",
+        "moves": 40,
+        "volume_encumber_modifier": 0.4,
+        "flag_restriction": [ "MAG_COMPACT", "MAG_BULKY" ]
+      }
+    ],
+    "use_action": { "type": "holster", "holster_prompt": "Stash ammo", "holster_msg": "You stash your %s." },
     "flags": [ "WATER_FRIENDLY", "BELTED" ]
   },
   {
@@ -204,9 +277,13 @@
     "symbol": "[",
     "looks_like": "towel",
     "color": "light_red",
-    "covers": [ "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ],
-    "coverage": 60,
-    "encumbrance": 50,
+    "armor": [
+      {
+        "encumbrance": 30,
+        "coverage": 100,
+        "covers": [ "torso", "arm_l", "arm_r", "hand_l", "hand_r", "leg_l", "leg_r", "foot_l", "foot_r" ]
+      }
+    ],
     "warmth": 20,
     "material_thickness": 1,
     "environmental_protection": 1,
@@ -227,13 +304,40 @@
     "symbol": "[",
     "looks_like": "touring_suit",
     "color": "light_red",
-    "covers": [ "TORSO", "ARMS", "LEGS" ],
-    "coverage": 90,
-    "encumbrance": 22,
-    "storage": "3000 ml",
+    "armor": [ { "covers": [ "torso", "arm_l", "arm_r" ], "coverage": 90, "encumbrance": 22 } ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "750 ml",
+        "max_contains_weight": "2 kg",
+        "moves": 80,
+        "max_item_length": "10 cm"
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "750 ml",
+        "max_contains_weight": "2 kg",
+        "moves": 80,
+        "max_item_length": "10 cm"
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "750 ml",
+        "max_contains_weight": "2 kg",
+        "moves": 80,
+        "max_item_length": "10 cm"
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "750 ml",
+        "max_contains_weight": "2 kg",
+        "moves": 80,
+        "max_item_length": "10 cm"
+      }
+    ],
     "warmth": 30,
     "material_thickness": 8,
-    "flags": [ "VARSIZE", "STURDY", "HELMET_COMPAT", "OVERSIZE", "OUTER", "ONLY_ONE" ]
+    "flags": [ "VARSIZE", "STURDY", "OVERSIZE", "OUTER", "ONLY_ONE" ]
   },
   {
     "id": "metro_nsmhelmet",
@@ -246,14 +350,12 @@
     "price": 15000,
     "price_postapoc": 1500,
     "to_hit": -1,
-    "bashing": 10,
+    "melee_damage": { "bash": 10 },
     "material": [ "steel" ],
     "symbol": "[",
     "looks_like": "hat_hard",
     "color": "green",
-    "covers": [ "HEAD" ],
-    "coverage": 85,
-    "encumbrance": 20,
+    "armor": [ { "covers": [ "head" ], "coverage": 85, "encumbrance": 20 } ],
     "warmth": 10,
     "material_thickness": 5,
     "techniques": [ "WBLOCK_1" ],

@@ -38,7 +38,7 @@
     "subtype": "distribution",
     "entries": [
       { "item": "ak74", "prob": 30, "charges": 30 },
-      { "item": "an94", "prob": 10, "charges": 30 },
+      { "item": "metro_an94", "prob": 10, "charges": 30 },
       { "item": "metro_bastard", "prob": 10, "charges": 10 },
       { "item": "metro_kalashtwen", "prob": 10, "charges": 40 },
       { "item": "metro_shambler", "prob": 10, "charges": 6 },
@@ -84,11 +84,7 @@
     "type": "item_group",
     "id": "reich_legs",
     "subtype": "distribution",
-    "entries": [
-      { "item": "pants_army", "prob": 35 },
-      { "item": "pants", "prob": 5 },
-      { "item": "pants_cargo", "prob": 15 }
-    ]
+    "entries": [ { "item": "pants_army", "prob": 35 }, { "item": "pants", "prob": 5 }, { "item": "pants_cargo", "prob": 15 } ]
   },
   {
     "type": "item_group",
@@ -105,9 +101,9 @@
     "id": "NC_REICHS_carry",
     "subtype": "collection",
     "entries": [
-      { "group": "cannedfood", "repeat": [ 1, 2 ] },
-      { "group": "drugs_heal_simple", "repeat": [ 1, 6 ] },
-      { "item": "545", "prob": 75, "repeat": [ 1, 2 ] },
+      { "group": "cannedfood", "count": [ 1, 2 ] },
+      { "group": "drugs_heal_simple", "count": [ 1, 6 ] },
+      { "item": "545", "prob": 75, "count": [ 1, 2 ] },
       { "item": "545_ap", "prob": 50 },
       { "item": "reloaded_545", "prob": 30 },
       { "item": "44fmj", "prob": 15 },
