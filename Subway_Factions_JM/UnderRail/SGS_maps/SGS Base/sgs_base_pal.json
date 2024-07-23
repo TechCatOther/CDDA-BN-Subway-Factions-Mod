@@ -240,7 +240,7 @@
         { "item": "chem_lab", "chance": 95 },
         { "item": "supplies_reagents_lab", "chance": 75, "repeat": [ 1, 6 ] },
         { "item": "science", "chance": 45, "repeat": [ 1, 2 ] },
-        { "item": "mut_iv", "chance": 10 }
+        { "item": "mutagenic_field_kit", "chance": 10 }
       ],
       "t": { "item": "dining", "chance": 35 },
       "R": [

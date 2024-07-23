@@ -8,7 +8,7 @@
       { "item": "sgs_marauder", "prob": 15, "charges": 25 },
       { "item": "sgs_spearhead", "prob": 15, "charges": 10 },
       { "item": "sgs_hawker", "prob": 30, "charges": 20 },
-      { "item": "sgs_laspistol", "prob": 10, "charges": 1000 },
+      { "item": "sgs_laspistol", "prob": 10, "charges-min": 500 },
       { "item": "sgs_acid_pistol", "prob": 2, "charges": 5 },
       { "item": "sgs_jackrabbit", "prob": 10, "charges": 30 },
       { "item": "sgs_steelcat", "prob": 10, "charges": 20 }
@@ -20,7 +20,7 @@
     "subtype": "distribution",
     "entries": [
       { "item": "sgs_hawker", "prob": 30, "charges": 20 },
-      { "item": "sgs_laspistol", "prob": 10, "charges": 1000 },
+      { "item": "sgs_laspistol", "prob": 10, "charges-min": 500 },
       { "item": "sgs_acid_pistol", "prob": 2, "charges": 5 },
       { "item": "sgs_jackrabbit", "prob": 10, "charges": 30 },
       { "item": "sgs_steelcat", "prob": 10, "charges": 20 }
@@ -147,7 +147,6 @@
       { "group": "livingroom", "count": [ 1, 4 ], "prob": 35 },
       { "group": "sgs_item_meleedrop", "count": [ 1, 2 ], "prob": 15 },
       { "group": "light_reading", "prob": 10 },
-      { "group": "textbooks_school", "prob": 10 },
       { "group": "file_room", "prob": 10 },
       { "group": "allclothes", "prob": 25, "count": [ 3, 7 ] },
       { "group": "dresser", "prob": 10, "count": [ 2, 5 ] }

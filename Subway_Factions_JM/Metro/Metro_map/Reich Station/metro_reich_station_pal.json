@@ -94,7 +94,7 @@
       "2": { "item": "metro_item_firearms_loot", "chance": 80, "repeat": [ 4, 7 ] },
       "3": [
         { "item": "clothing_military", "chance": 20 },
-        { "item": "mil_armor_helmet", "chance": 25 },
+        { "item": "metro_mil_armor_helmet", "chance": 25 },
         { "item": "military_standard_grenades", "chance": 70, "repeat": [ 2, 6 ] },
         { "item": "metro_item_nsmarmor", "chance": 70, "repeat": [ 4, 7 ] }
       ],

@@ -30,7 +30,7 @@
     "entries": [
       { "item": "metro_lolifemag", "prob": 50, "ammo-item": "44magnum", "charges": 8 },
       { "item": "metro_lolifemag", "prob": 30, "ammo-item": "reloaded_44fmj", "charges": 8 },
-      { "item": "metro_lolifebigmag", "prob": 20, "ammo-item": "40fmj", "charges": 20 },
+      { "item": "metro_lolifebigmag", "prob": 20, "ammo-item": "44fmj", "charges": 20 },
       { "item": "metro_lolifebigmag", "prob": 20, "ammo-item": "reloaded_44magnum", "charges": 20 }
     ]
   },
@@ -81,6 +81,18 @@
       { "item": "metro_nsmhelmet", "prob": 40 },
       { "item": "jacket_army", "prob": 30 },
       { "item": "pants_army", "prob": 35 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "metro_mil_armor_helmet",
+    "subtype": "collection",
+    "entries": [
+      { "item": "helmet_army", "prob": 40 },
+      { "item": "helmet_liner", "prob": 20 },
+      { "item": "beret", "prob": 50 },
+      { "item": "beret_wool", "prob": 40 },
+      { "item": "mask_bal", "prob": 10 }
     ]
   }
 ]
