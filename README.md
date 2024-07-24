@@ -1,5 +1,5 @@
-# CDDA-BN-Subway-Factions-Mod
-Adds a variety of locations, items NPC factions to the subways of CDDA: Bright Nights inspired by the Metro 2033 and Underrail series of video games.
+# CDDA-Subway-Factions-Mod
+Adds a variety of locations, items NPC factions to the subways of Cataclysm: Dark Days Ahead inspired by the Metro 2033 and Underrail series of video games.
 
 A mod that adds items, locations and NPC factions based on Underrail and Metro 2033.
 
@@ -19,6 +19,6 @@ In particular, this mod adds:
 
 -14 new professions with 3 new spawn locations.
 
-Made on the 66cdb2f version of Bright Nights.
+## Warning
 
-A word of warning, CDDA has some issues spawning subway locations in a way that are connected to one another, or are accessible to the user. If you use a subway spawn start, please try generating a world if generation fails on the first try.
+CDDA has some issues spawning subway locations in a way that are connected to one another, or are accessible to the user. If you use a subway spawn start, please try generating a world if generation fails on the first try.
